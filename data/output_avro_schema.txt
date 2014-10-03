@@ -1,0 +1,40 @@
+{
+     "type": "record",
+     "namespace": "sk.stuba.fiit.vi",
+     "name": "parsingDBPedia,
+     "fields": [{"name" : "Isaac_Newton",
+                  "type" : {
+                         "type" : "record",
+                         "name" : "Kategória",
+                         "fields" : [
+                            {"name" : "Anglickí_filozofi",
+                             "type" : "string",
+                             "default" : "NONE"},
+
+                            {"name" : "Anglickí_fyzici",
+                             "type" : "string",
+                             "default" : "NONE"},
+
+                            {"name" : "Anglickí_matematici",
+                             "type" : "string",
+                             "default" : "NONE"},
+
+                            {"name" : "Optici",
+                             "type" : "string",
+                             "default" : "NONE"},
+
+                            {"name" : "Alchymisti",
+                             "type" : "string",
+                             "default" : "NONE"}
+                             
+                             {"name" : "Okultisti",
+                             "type" : "string",
+                             "default" : "NONE"}
+                             
+                             {"name" : "Prezidenti_Kráľovskej_spoločnosti",
+                             "type" : "string",
+                             "default" : "NONE"}
+                            ]}
+                }
+     ]
+}
