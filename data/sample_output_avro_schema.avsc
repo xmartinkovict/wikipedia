@@ -1,0 +1,14 @@
+{
+	"namespace": "sk.stuba.fiit.vi",
+	"type": "record",
+	"name": "DBPedia",
+	"fields": [
+		{"name": "resource", "type": "string"}
+		{"name": "instances", "type": [{"type":"array", "items":"string"}, "null"]},
+		{"name": "categories", "type":[{"type":"array", "items":"string"}, "null"]},
+		{"name": "templates", "type":[{"type":"array", "items":"string"}, "null"]},
+		{"name": "infobox_properties", "type":[{"type":"array", "items":"string"}, "null"]},
+		{"name": "long_abstracts", "type":["string", "null"]},
+		{"name": "short_abstracts", "type":["string", "null"]}
+	]
+}
