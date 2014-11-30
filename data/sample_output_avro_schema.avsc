@@ -1,14 +1,24 @@
 {
-	"namespace": "sk.stuba.fiit.vi",
 	"type": "record",
+	"namespace": "sk.stuba.fiit.vi",
 	"name": "DBPedia",
 	"fields": [
-		{"name": "resource", "type": "string"}
-		{"name": "instances", "type": [{"type":"array", "items":"string"}, "null"]},
-		{"name": "categories", "type":[{"type":"array", "items":"string"}, "null"]},
-		{"name": "templates", "type":[{"type":"array", "items":"string"}, "null"]},
-		{"name": "infobox_properties", "type":[{"type":"array", "items":"string"}, "null"]},
-		{"name": "long_abstracts", "type":["string", "null"]},
-		{"name": "short_abstracts", "type":["string", "null"]}
+		{"name": "dbpedia_resource", "type": "string"},
+		{"name": "category", "type": [{"type":"array", "items":"string"}, "null"]},
+		{"name": "template", "type": [{"type":"array", "items":"string"}, "null"]},
+		{"name": "infobox_property", "type": [{"type":"array", "items":{
+																			"name":"infobox_property",
+																			"type":"record",
+																			"fields":[
+																				{"name": "property", "type": "string"},
+																				{"name": "infobox_property", "type": "string"}
+																			]
+																		}}, "null"]},
+		{"name": "instance_type", "type": [{"type":"array", "items":"string"}, "null"]},
+		{"name": "long_abstract", "type": [{"type":"array", "items":"string"}, "null"]},
+		{"name": "short_abstract", "type": [{"type":"array", "items":"string"}, "null"]},
+		{"name": "wikipedia_link", "type": [{"type":"array", "items":"string"}, "null"]}
+						
+						
 	]
 }
